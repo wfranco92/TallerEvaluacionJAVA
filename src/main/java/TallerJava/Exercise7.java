@@ -1,0 +1,23 @@
+package TallerJava;
+/*
+Lee un número por teclado y comprueba que este numero es mayor o igual que cero,
+si no lo es lo volverá a pedir (do while), después muestra ese número por consola.
+ */
+
+import java.util.Scanner;
+
+public class Exercise7 {
+
+    static int number;
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        do{
+            System.out.println("Ingrese el numero a evaluar: ");
+            number = scanner.nextInt();
+        }while(number < 0);
+
+        System.out.println("el numero correcto ingresado es: " + number);
+    }
+}
