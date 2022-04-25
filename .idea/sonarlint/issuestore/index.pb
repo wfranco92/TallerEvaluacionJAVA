@@ -38,6 +38,4 @@ a
 i
 9src/main/java/TallerJava/Exercise17/Electrodomestico.java,5\4\54a34ff5846a5ce39933315af884038b1fc81252
 X
-(src/main/java/TallerJava/Exercise12.java,6\1\61ec1ebd9780010e644de2df60d935ab0a510020
-X
 (src/main/java/TallerJava/Exercise13.java,4\5\45cdd6faf11cb171af971a617b7f59b89eaa357d
