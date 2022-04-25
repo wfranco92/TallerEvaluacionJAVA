@@ -9,14 +9,19 @@ Haz una aplicación que calcule el área de un círculo(pi*R2). El radio se pedi
 public class Exercise3 {
     public static void main(String[] args) {
 
-        double area;
-        Scanner scanner = new Scanner(System.in);
-        final Double PI = Math.PI;
-        System.out.println("Ingresa la longitud del radio: ");
-        double radio = scanner.nextDouble();
+        try {
+            Double area;
+            Scanner scanner = new Scanner(System.in);
+            final Double PI = Math.PI;
+            System.out.println("Ingresa la longitud del radio: ");
+            double radio = scanner.nextDouble();
 
-        area = PI * (Math.pow(radio, 2));
-        System.out.println("el area del circulo es: " + area);
+            area = PI * (Math.pow(radio, 2));
+            System.out.println("el area del circulo es: " + area);
+        } catch (NumberFormatException e) {
+            System.out.println("Has ingresado texto, por favor verifica e ingresa solo numeros");
+        }
+
 
     }
 }

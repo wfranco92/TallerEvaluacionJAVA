@@ -5,33 +5,33 @@ import java.util.Map;
 
 public class Electrodomestico {
 
-    protected double basePrice;
+    protected Double basePrice;
     protected String color;
     protected char energyConsumption;
-    protected double weight;
+    protected Double weight;
 
     public Electrodomestico(){
-        this.basePrice = 100;
+        this.basePrice = 100.0;
         this.color = "blanco";
         this.energyConsumption = 'F';
-        this.weight = 5;
+        this.weight = 5.0;
     }
 
-    public Electrodomestico(double price, double weight){
+    public Electrodomestico(Double price, Double weight) {
         this.basePrice = price;
         this.color = "blanco";
         this.energyConsumption = 'F';
         this.weight = weight;
     }
 
-    public Electrodomestico(double price, String color, char energyConsumption, double weight){
+    public Electrodomestico(Double price, String color, char energyConsumption, Double weight) {
         this.basePrice = price;
         this.color = comprobarColor(color);
         this.energyConsumption = comprobarConsumoEnergetico(energyConsumption);
         this.weight = weight;
     }
 
-    public double getBasePrice() {
+    public Double getBasePrice() {
         return basePrice;
     }
 
@@ -43,7 +43,7 @@ public class Electrodomestico {
         return energyConsumption;
     }
 
-    public double getWeight() {
+    public Double getWeight() {
         return weight;
     }
 
@@ -68,12 +68,12 @@ public class Electrodomestico {
         return "blanco";
     }
 
-    protected double precioFinal(){
+    protected Double precioFinal() {
 
         return getBasePrice() + priceAumentByConsume() + priceAumentByWeight();
     }
 
-    private double priceAumentByConsume() {
+    private Double priceAumentByConsume() {
 
         Map<Character, Double> priceAumentByConsume = new HashMap<>();
         priceAumentByConsume.put('A', 100.0);
@@ -83,7 +83,7 @@ public class Electrodomestico {
         priceAumentByConsume.put('E', 30.0);
         priceAumentByConsume.put('F', 10.0);
 
-        double aument = 0;
+        Double aument = 0.0;
         for (char value : priceAumentByConsume.keySet()) {
             if (value == getEnergyConsumption()) {
                 aument += priceAumentByConsume.get(value);
@@ -93,17 +93,17 @@ public class Electrodomestico {
         return aument;
     }
 
-    private double priceAumentByWeight(){
+    private Double priceAumentByWeight() {
 
         double aument = 0;
         double rangeWeight = getWeight();
-        if(rangeWeight <= 19){
+        if (rangeWeight <= 19) {
             aument += 10;
-        }else if(rangeWeight >= 20 && rangeWeight <= 49){
+        } else if (rangeWeight >= 20 && rangeWeight <= 49) {
             aument += 50;
-        }else if(rangeWeight >=50  && rangeWeight <= 79){
+        } else if (rangeWeight >= 50 && rangeWeight <= 79) {
             aument += 80;
-        }else{
+        } else {
             aument += 100;
         }
         return aument;

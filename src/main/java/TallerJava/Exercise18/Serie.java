@@ -89,4 +89,17 @@ public class Serie implements Ientregable{
     public boolean isEntregado() {
         return isdelivered;
     }
+
+    @Override
+    public int compareTo(Object a) {
+        Serie aux = (Serie) a;
+        if (this.getSeason() < aux.getSeason()) {
+            return 1;
+        }
+        if (this.getSeason() > aux.getSeason()) {
+            return 0;
+        }
+        return -1;
+    }
+
 }

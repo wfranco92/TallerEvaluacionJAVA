@@ -1,7 +1,7 @@
 
-D
-java:S1121".Extract the assignment out of this expression.(œ¤¸…
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(–·Ì
-S	java:S106"9Replace this use of System.out or System.err by a logger.(¨ŸİÄüÿÿÿÿ
-U	java:S106"9Replace this use of System.out or System.err by a logger.(ë·õ8öÿôƒ0
-U	java:S106"9Replace this use of System.out or System.err by a logger.(œ¤¸…8äµÿôƒ0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¨ŸİÄüÿÿÿÿ8ğĞ¯›…0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ë·õ8ñĞ¯›…0
+T	java:S106"9Replace this use of System.out or System.err by a logger.(çƒï
+8òĞ¯›…0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(íªıãÿÿÿÿÿ8±Ş°›…0

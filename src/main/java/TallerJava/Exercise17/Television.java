@@ -1,18 +1,18 @@
 package TallerJava.Exercise17;
 
 public class Television extends Electrodomestico{
-    private double resolucion;
+    private Double resolucion;
     private boolean sintonizadorTDT;
 
     public Television(){
         super();
-        this.resolucion = 20;
+        this.resolucion = 20.0;
         this.sintonizadorTDT = false;
     }
 
     public Television(double price, double weight){
         super(price, weight);
-        this.resolucion = 20;
+        this.resolucion = 20.0;
         this.sintonizadorTDT = false;
     }
 
@@ -31,13 +31,13 @@ public class Television extends Electrodomestico{
     }
 
     @Override
-    protected double precioFinal(){
-        double aumentResolucion = super.precioFinal();
-        double aumentSintonizador = 0;
-        if(getResolucion() > 40){
-            aumentResolucion += super.precioFinal() + (this.getBasePrice()*30)/100;
+    protected Double precioFinal() {
+        Double aumentResolucion = super.precioFinal();
+        Double aumentSintonizador = 0.0;
+        if (getResolucion() > 40) {
+            aumentResolucion += super.precioFinal() + (this.getBasePrice() * 30) / 100;
         }
-        if(isSintonizadorTDT()){
+        if (isSintonizadorTDT()) {
             aumentSintonizador += super.precioFinal() + 50;
         }
         return aumentResolucion + aumentSintonizador;

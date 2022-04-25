@@ -1,0 +1,20 @@
+
+l
+java:S1192."QDefine a constant instead of duplicating this literal "Es mayor de edad" 3 times.(áä ûÿÿÿÿ
+l
+java:S1192."QDefine a constant instead of duplicating this literal "Es menor de edad" 3 times.(áä ûÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(àöï¶ûÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(šÃÌ˜ûÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Öä«÷
+S	java:S106"9Replace this use of System.out or System.err by a logger.(³Äòäúÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(šé…¸
+N	java:S106"9Replace this use of System.out or System.err by a logger.(…òÙß
+N	java:S106*"9Replace this use of System.out or System.err by a logger.(½Ññ’
+S	java:S106+"9Replace this use of System.out or System.err by a logger.(’ÁÅ£ûÿÿÿÿ
+N	java:S106,"9Replace this use of System.out or System.err by a logger.(¦Š–
+S	java:S106."9Replace this use of System.out or System.err by a logger.(áä ûÿÿÿÿ
+N	java:S106/"9Replace this use of System.out or System.err by a logger.(õÜŒù
+S	java:S1060"9Replace this use of System.out or System.err by a logger.(èªĞ¤şÿÿÿÿ
+N	java:S1062"9Replace this use of System.out or System.err by a logger.(ÓıÒ‹
+N	java:S1063"9Replace this use of System.out or System.err by a logger.(²Ñªš
+N	java:S1064"9Replace this use of System.out or System.err by a logger.(¦ˆ©

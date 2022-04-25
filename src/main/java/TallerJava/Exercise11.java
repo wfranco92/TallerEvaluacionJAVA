@@ -11,19 +11,19 @@ public class Exercise11 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        int a = 0;
-        int e = 0;
-        int i = 0;
-        int o = 0;
-        int u = 0;
+        Integer a = 0;
+        Integer e = 0;
+        Integer i = 0;
+        Integer o = 0;
+        Integer u = 0;
 
         System.out.println("Ingresa una frase");
         String phrase = scanner.nextLine();
 
-        for(int j = 0; j < phrase.length(); j++){
+        for (int j = 0; j < phrase.length(); j++) {
             char letter = phrase.charAt(j);
 
-            if( letter == 'a'){
+            if (letter == 'a') {
                 a++;
                 continue;
             }

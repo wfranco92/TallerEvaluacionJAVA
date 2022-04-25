@@ -1,0 +1,13 @@
+
+g
+java:S1192"LDefine a constant instead of duplicating this literal "dia laboral" 5 times.(ı¬öäûÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(–·Ì
+S	java:S106"9Replace this use of System.out or System.err by a logger.(şåÄ¨ùÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ı¬öäûÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ı¬öäûÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ı¬öäûÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ı¬öäûÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ı¬öäûÿÿÿÿ
+N	java:S106!"9Replace this use of System.out or System.err by a logger.(ÌÏ‚·
+N	java:S106$"9Replace this use of System.out or System.err by a logger.(ÌÏ‚·
+N	java:S106'"9Replace this use of System.out or System.err by a logger.(œÿˆŸ

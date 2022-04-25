@@ -19,34 +19,45 @@ public class Exercise12 {
 
         if(firstWord.equals(secondWord)){
             System.out.println("Las palabras son iguales");
-        }else{
+        } else {
             System.out.println("la diferencia en longitud es: " + differenceLength(firstWord, secondWord));
             System.out.println("la diferencia en letras de la segunda palabra es: " + differenceLetter(firstWord, secondWord));
         }
     }
 
-    static int differenceLength(String first, String second){
-        return Math.abs(first.length()-second.length());
+    static int differenceLength(String first, String second) {
+        return Math.abs(first.length() - second.length());
     }
 
-    static String differenceLetter(String first, String second){
-        String difference = "";
+    /**
+     * metodo estatico para verificar la diferencia first con respecto a second.
+     * No se utiliza libreria String.util y se crea un metodo manual. Si las cadenas tienen longitud diferente. A traves de un condicional
+     * y de un ciclo FOR, e evalua la difernecia y se igualan las longitudes de los parametors con caracteres de relleno. Lo anterior para que cuando se compare
+     * caracter a caracter de la cadena, no aroje una excepcion NullPointerExcepcion, en la palabra mas corta.
+     *
+     * @param first  primera palabra para comparar
+     * @param second segunda palabra para comparar con respecto  a first
+     * @return String con la cadena de caracteres de diferencia
+     */
+    static String differenceLetter(String first, String second) {
+        StringBuilder difference = new StringBuilder();
         int lenght = first.length();
-        if(first.length() < second.length()){    // se evalua cual cadena tiene mayor longitud, si es la segunda, se establce la longitud de iteracion del ultimo for
-            lenght = second.length();               // si no lo es se empieza a llenar la primera palabra con "a" para poder comparar ambas cadenas y sean de la misma longotud
-            for (int i = 0; i <= second.length()-first.length(); i++) {
-                first +="a";
+        if (first.length() < second.length()) {
+            lenght = second.length();
+            for (int i = 0; i <= second.length() - first.length(); i++) {
+                first += "a";
             }
-        }else{
-            for (int i = 0; i <= first.length()-second.length(); i++) {  // si la priemra cadena es mayor en longitud, se llena la segunda cadena con "-" para igualar longitudes y recorrer/comparar
-                second +="-";
+        } else {
+            for (int i = 0; i <= first.length() - second.length(); i++) {
+                second += "-";
             }
 
         }
         for (int i = 0; i < lenght; i++) {
-            if(first.charAt(i) != second.charAt(i))
-            difference += second.charAt(i);
+            if (first.charAt(i) != second.charAt(i)) {
+                difference.append(second.charAt(i));
+            }
         }
-        return difference;
+        return difference.toString();
     }
 }

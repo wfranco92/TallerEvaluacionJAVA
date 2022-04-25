@@ -1,16 +1,14 @@
 package TallerJava.Exercise17;
 
-import java.util.Arrays;
-
 public class App {
 
     public static void main(String[] args) {
 
-        Electrodomestico [] electrodomesticos = new Electrodomestico[10];
+        Electrodomestico[] electrodomesticos = new Electrodomestico[10];
 
-        double precioTelevisores = 0;
-        double precioLavadoras = 0;
-        double precioElectrodomesticos = 0;
+        Double precioTelevisores = 0.0;
+        Double precioLavadoras = 0.0;
+        Double precioElectrodomesticos = 0.0;
 
         electrodomesticos[0] = new Lavadora();
         electrodomesticos[1] = new Electrodomestico();

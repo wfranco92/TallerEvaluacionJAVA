@@ -6,22 +6,20 @@ Si son iguales indicarlo también. Ve cambiando los valores para comprobar que f
  */
 
 public class Exercise1 {
-
-    static String message;
-
     public static void main(String[] args) {
 
-        int numberOne = 5;
-        int numberTwo = 13;
+        Integer numberOne = 15;
+        Integer numberTwo = 13;
 
-        System.out.println(message = compareNumber(numberOne, numberTwo));
+        System.out.println(compareNumber(numberOne, numberTwo));
 
     }
-    public static String compareNumber(int numberA, int numberB){
-        if(numberA < numberB){
+
+    public static String compareNumber(Integer numberA, Integer numberB) {
+        if (numberA < numberB) {
             return "Numero mayor " + numberB;
         }
-        if(numberA > numberB){
+        if (numberA > numberB) {
             return "Numero mayor " + numberA;
         }
         return "Los numeros son iguales";

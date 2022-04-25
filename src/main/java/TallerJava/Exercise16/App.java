@@ -7,11 +7,11 @@ public class App {
 
     public static void main(String[] args) {
         String name;
-        short age;
+        Short age;
         String sex;
-        double weight;
-        double height;
-        String [] message = {"por debajo de su peso ideal", "está en su peso ideal", "tiene sobrepeso", };
+        Double weight;
+        Double height;
+        String[] message = {"por debajo de su peso ideal", "está en su peso ideal", "tiene sobrepeso",};
 
         Scanner scanner = new Scanner(System.in);
 
@@ -39,13 +39,13 @@ public class App {
         persona3.setWeight(77.5);
         persona3.setHeight(1.78);
 
-        System.out.println(message[persona1.calcularIMC()]);
-        System.out.println(message[persona2.calcularIMC()]);
-        System.out.println(message[persona3.calcularIMC()]);
+        System.out.println("Persona 1 " + message[persona1.calcularIMC()]);
+        System.out.println("Persona 2 " + message[persona2.calcularIMC()]);
+        System.out.println("Persona 3 " + message[persona3.calcularIMC()]);
 
-        System.out.println(persona1.esMayorDeEdad() ? "Es mayor de edad" : "Es menor de edad");
-        System.out.println(persona2.esMayorDeEdad() ? "Es mayor de edad" : "Es menor de edad");
-        System.out.println(persona3.esMayorDeEdad() ? "Es mayor de edad" : "Es menor de edad");
+        System.out.println("Persona 1 " + (persona1.esMayorDeEdad() ? "Es mayor de edad" : "Es menor de edad"));
+        System.out.println("Persona 2 " + (persona2.esMayorDeEdad() ? "Es mayor de edad" : "Es menor de edad"));
+        System.out.println("Persona 3 " + (persona3.esMayorDeEdad() ? "Es mayor de edad" : "Es menor de edad"));
 
         System.out.println(persona1.toString());
         System.out.println(persona2.toString());

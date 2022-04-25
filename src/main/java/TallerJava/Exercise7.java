@@ -8,16 +8,22 @@ import java.util.Scanner;
 
 public class Exercise7 {
 
-    static int number;
+
     public static void main(String[] args) {
+
+        Integer number;
 
         Scanner scanner = new Scanner(System.in);
 
-        do{
-            System.out.println("Ingrese el numero a evaluar: ");
-            number = scanner.nextInt();
-        }while(number < 0);
+        try {
+            do {
+                System.out.println("Ingrese el numero a evaluar: ");
+                number = Integer.parseInt(scanner.next());
+            } while (number < 0);
+            System.out.println("el numero correcto ingresado es: " + number);
+        } catch (NumberFormatException e) {
+            System.out.println("Has ingresado texto, por favor verifica e ingresa solo numeros");
+        }
 
-        System.out.println("el numero correcto ingresado es: " + number);
     }
 }

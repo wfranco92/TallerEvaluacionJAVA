@@ -2,13 +2,13 @@ package TallerJava.Exercise16;
 
 public class Persona {
     private String name;
-    private short age;
+    private Short age;
     private final String dni;
     private String sex;
-    private double weight;
-    private double height;
+    private Double weight;
+    private Double height;
 
-    public Persona(){
+    public Persona() {
         this.name = "";
         this.age = 0;
         this.dni = generarDNI();
@@ -30,7 +30,7 @@ public class Persona {
         comprobarSexo(this.sex);
     }
 
-    public Persona(String name, short age, String sex, double weight, double height) {
+    public Persona(String name, short age, String sex, Double weight, Double height) {
         this.name = name;
         this.age = age;
         this.dni = generarDNI();

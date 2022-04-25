@@ -10,17 +10,22 @@ public class Exercise14 {
 
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
-        int number;
+        try {
+            Scanner scanner = new Scanner(System.in);
+            Integer number;
 
-        do {
-            System.out.println("ingrese el numero (menor a 1000): ");
-            number = scanner.nextInt();
-        }while(number>1000);
+            do {
+                System.out.println("ingrese el numero (menor a 1000): ");
+                number = Integer.parseInt(scanner.next());
+            } while (number > 1000);
 
 
-        for(int i = number; i <= 1000; i+=2){
-            System.out.print(i + "-");
+            for (int i = number; i <= 1000; i += 2) {
+                System.out.print(i + "-");
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("Ha ingresado caracteres diferentes a un numero, intente nuevamente");
         }
+
     }
 }

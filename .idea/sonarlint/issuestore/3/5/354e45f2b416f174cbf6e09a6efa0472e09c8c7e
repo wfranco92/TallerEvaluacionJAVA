@@ -1,0 +1,8 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ΰφο¶ϋÿÿÿÿ
+\
+java:S1126Q"AReplace this if-then-else statement by a single return statement.(αΫλ΅ωÿÿÿÿ
+@
+java:S1172W"*Remove this unused method parameter "sex".(Γ®™Φ
+D
+java:S2140t")Use "java.util.Random.nextInt()" instead.(ϊρο€ωÿÿÿÿ

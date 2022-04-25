@@ -89,4 +89,17 @@ public class VideoJuego implements Ientregable{
     public boolean isEntregado() {
         return isdelivered;
     }
+
+    @Override
+    public int compareTo(Object a) {
+        VideoJuego aux = (VideoJuego) a;
+        if (this.getEstimateHour() < aux.getEstimateHour()) {
+            return 1;
+        }
+        if (this.getEstimateHour() > aux.getEstimateHour()) {
+            return 0;
+        }
+        return -1;
+    }
 }
+

@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class Exercise5 {
 
     public static void main(String[] args) {
-        int contador = 1;
+        Integer contador = 1;
         ArrayList<Integer> pares = new ArrayList<Integer>();
         ArrayList<Integer> impares = new ArrayList<Integer>();
         while (contador <= 100){
